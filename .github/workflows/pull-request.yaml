@@ -1,0 +1,17 @@
+name: pull request
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  pill-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Show sys files
+        run: ls
+
+      - name: finalize the Job
+        run: echo "The Job is Done"
