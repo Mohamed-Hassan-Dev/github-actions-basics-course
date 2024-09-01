@@ -1,0 +1,12 @@
+name: Fahmy Hello World
+
+on:
+  workflow_dispatch:
+
+jobs:
+  print-hello-world-To-Fahmy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello World, Fahmy"
